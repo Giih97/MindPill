@@ -1,0 +1,119 @@
+#nivel {   
+    background-color: rgb(85, 221, 187);
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#nivel:hover {
+    background-color:rgb(236, 4, 4);
+    border: 1px solid white;
+}
+
+#nivel p {
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.niveis_left {
+    margin-left: 40%;
+    display: inline-block;
+}
+
+.niveis_right {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 55px;
+    display: inline-block;
+}
+
+.nivel1 {
+    width: 50px;
+    height: 50px;
+}
+
+.nivel1 div {
+    width: 180px;
+}
+
+.nivel2 {
+    width: 60px;
+    height: 60px;
+}
+
+.nivel2 div {
+    width: 180px;
+    margin-left: -180px;
+}
+
+.nivel3 {
+    width: 70px;
+    height: 70px;
+}
+
+.nivel3 div {
+    width: 170px;
+}
+
+.nivel4 {
+    width: 80px;
+    height: 80px;
+}
+
+.nivel4 div {
+    width: 170px;
+    margin-left: -170px;
+}
+
+.nivel5 {
+    width: 90px;
+    height: 90px;
+}
+
+.nivel5 div {
+    width: 160px;
+}
+
+.nivel6 {
+    width: 100px;
+    height: 100px;
+}
+
+.nivel6 div {
+    width: 160px;
+    margin-left: -160px;
+}
+
+.nivel7 {
+    width: 110px;
+    height: 110px;
+}
+
+.pathleft {
+    height: 30px;
+    border-radius: 0px 20px 0px 0px ;
+    border: 3px dotted black;
+    border-bottom: none;
+    border-left: none;
+    margin-left: 100%;
+    position: absolute;
+    margin-top: 50%;
+}
+
+.pathright {
+    height: 30px;
+    border-radius: 20px 0px 0px 0px ;
+    border: 3px dotted black;
+    border-bottom: none;
+    border-right: none;
+    margin-left: -140px;
+    position: absolute;
+    margin-top: 50%;
+}

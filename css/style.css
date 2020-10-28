@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: linear-gradient(to left, rgb(0, 118, 87) 20%,rgb(85, 221, 187) 80%, white);
+    background-image: linear-gradient(to right, rgb(0, 118, 87) 15%,rgb(85, 221, 187) 80%, white);
 }
 header {
     background: rgb(0, 118, 87);
