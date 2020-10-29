@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 1300px;
+            margin: 0 auto;
+        }
+        main {
+            display: flex;
+            justify-content: space-around;
+        }
+        #resultados {
+            display: flex;
+            justify-content: space-around;
+        }
+        #botao {
+            width: 90%;
+            line-height: 50px;
+        }
+        .resultado {
+            text-align: center;
+            margin: 40px auto;
+        }
+        .perfil {
+            font-size: 30pt;
+            font-weight: bold;
+            color: red;
+            background: yellow;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- Começo da Sessão Dominância -->
+        <section class="sectionDominancia">
+            <fieldset>
+                <legend>Dominância</legend>
+                <label for="dominancia1">Dominancia 1</label>
+                <br>
+                <input type="radio" name="dominancia1" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia1" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia1" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia1" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia2">Dominancia 2</label>
+                <br>
+                <input type="radio" name="dominancia2" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia2" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia2" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia2" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia3">Dominancia 3</label>
+                <br>
+                <input type="radio" name="dominancia3" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia3" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia3" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia3" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia4">Dominancia 4</label>
+                <br>
+                <input type="radio" name="dominancia4" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia4" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia4" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia4" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia5">Dominancia 5</label>
+                <br>
+                <input type="radio" name="dominancia5" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia5" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia5" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia5" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia6">Dominancia 6</label>
+                <br>
+                <input type="radio" name="dominancia6" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia6" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia6" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia6" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia7">Dominancia 7</label>
+                <br>
+                <input type="radio" name="dominancia7" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia7" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia7" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia7" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia8">Dominancia 8</label>
+                <br>
+                <input type="radio" name="dominancia8" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia8" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia8" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia8" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia9">Dominancia 9</label>
+                <br>
+                <input type="radio" name="dominancia9" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia9" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia9" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia9" class="dominancia" value="4">4 <br>
+                <br><br>
+                <label for="dominancia10">Dominancia 10</label>
+                <br>
+                <input type="radio" name="dominancia10" class="dominancia" value="1">1 <br>
+                <input type="radio" name="dominancia10" class="dominancia" value="2">2 <br>
+                <input type="radio" name="dominancia10" class="dominancia" value="3">3 <br>
+                <input type="radio" name="dominancia10" class="dominancia" value="4">4 <br>
+            </fieldset>
+        </section>
+        <!-- /Fim da Sessão Dominância -->
+
+
+         <!-- Começo da Sessão Influência -->
+        <section class="sectioninfluencia">
+            <fieldset>
+                <legend>Influência</legend>
+                <label for="influencia1">influencia 1</label>
+                <br>
+                <input type="radio" name="influencia1" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia1" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia1" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia1" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia2">influencia 2</label>
+                <br>
+                <input type="radio" name="influencia2" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia2" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia2" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia2" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia3">influencia 3</label>
+                <br>
+                <input type="radio" name="influencia3" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia3" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia3" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia3" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia4">influencia 4</label>
+                <br>
+                <input type="radio" name="influencia4" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia4" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia4" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia4" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia5">influencia 5</label>
+                <br>
+                <input type="radio" name="influencia5" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia5" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia5" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia5" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia6">influencia 6</label>
+                <br>
+                <input type="radio" name="influencia6" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia6" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia6" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia6" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia7">influencia 7</label>
+                <br>
+                <input type="radio" name="influencia7" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia7" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia7" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia7" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia8">influencia 8</label>
+                <br>
+                <input type="radio" name="influencia8" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia8" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia8" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia8" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia9">influencia 9</label>
+                <br>
+                <input type="radio" name="influencia9" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia9" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia9" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia9" class="influencia" value="4">4 <br>
+                <br><br>
+                <label for="influencia10">influencia 10</label>
+                <br>
+                <input type="radio" name="influencia10" class="influencia" value="1">1 <br>
+                <input type="radio" name="influencia10" class="influencia" value="2">2 <br>
+                <input type="radio" name="influencia10" class="influencia" value="3">3 <br>
+                <input type="radio" name="influencia10" class="influencia" value="4">4 <br>
+            </fieldset>
+
+        </section>
+        <!-- /Fim da Sessão Influência -->
+
+        <!-- Começo da Sessão Estabilidade -->
+        <section class="sectionestabilidade">
+            <fieldset>
+                <legend>Estabilidade</legend>
+                <label for="estabilidade1">estabilidade 1</label>
+                <br>
+                <input type="radio" name="estabilidade1" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade1" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade1" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade1" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade2">estabilidade 2</label>
+                <br>
+                <input type="radio" name="estabilidade2" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade2" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade2" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade2" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade3">estabilidade 3</label>
+                <br>
+                <input type="radio" name="estabilidade3" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade3" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade3" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade3" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade4">estabilidade 4</label>
+                <br>
+                <input type="radio" name="estabilidade4" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade4" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade4" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade4" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade5">estabilidade 5</label>
+                <br>
+                <input type="radio" name="estabilidade5" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade5" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade5" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade5" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade6">estabilidade 6</label>
+                <br>
+                <input type="radio" name="estabilidade6" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade6" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade6" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade6" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade7">estabilidade 7</label>
+                <br>
+                <input type="radio" name="estabilidade7" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade7" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade7" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade7" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade8">estabilidade 8</label>
+                <br>
+                <input type="radio" name="estabilidade8" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade8" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade8" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade8" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade9">estabilidade 9</label>
+                <br>
+                <input type="radio" name="estabilidade9" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade9" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade9" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade9" class="estabilidade" value="4">4 <br>
+                <br><br>
+                <label for="estabilidade10">estabilidade 10</label>
+                <br>
+                <input type="radio" name="estabilidade10" class="estabilidade" value="1">1 <br>
+                <input type="radio" name="estabilidade10" class="estabilidade" value="2">2 <br>
+                <input type="radio" name="estabilidade10" class="estabilidade" value="3">3 <br>
+                <input type="radio" name="estabilidade10" class="estabilidade" value="4">4 <br>
+            </fieldset>
+
+        </section>
+        <!-- /Fim da Sessão Estabilidade -->
+
+        <!-- Começo da Sessão conformidade -->
+        <section class="sectionconformidade">
+            <fieldset>
+                <legend>conformidade</legend>
+                <label for="conformidade1">conformidade 1</label>
+                <br>
+                <input type="radio" name="conformidade1" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade1" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade1" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade1" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade2">conformidade 2</label>
+                <br>
+                <input type="radio" name="conformidade2" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade2" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade2" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade2" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade3">conformidade 3</label>
+                <br>
+                <input type="radio" name="conformidade3" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade3" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade3" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade3" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade4">conformidade 4</label>
+                <br>
+                <input type="radio" name="conformidade4" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade4" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade4" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade4" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade5">conformidade 5</label>
+                <br>
+                <input type="radio" name="conformidade5" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade5" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade5" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade5" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade6">conformidade 6</label>
+                <br>
+                <input type="radio" name="conformidade6" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade6" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade6" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade6" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade7">conformidade 7</label>
+                <br>
+                <input type="radio" name="conformidade7" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade7" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade7" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade7" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade8">conformidade 8</label>
+                <br>
+                <input type="radio" name="conformidade8" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade8" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade8" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade8" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade9">conformidade 9</label>
+                <br>
+                <input type="radio" name="conformidade9" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade9" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade9" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade9" class="conformidade" value="4">4 <br>
+                <br><br>
+                <label for="conformidade10">conformidade 10</label>
+                <br>
+                <input type="radio" name="conformidade10" class="conformidade" value="1">1 <br>
+                <input type="radio" name="conformidade10" class="conformidade" value="2">2 <br>
+                <input type="radio" name="conformidade10" class="conformidade" value="3">3 <br>
+                <input type="radio" name="conformidade10" class="conformidade" value="4">4 <br>
+            </fieldset>
+
+        </section>
+        <!-- /Fim da Sessão conformidade -->
+    </main>
+
+    <section class="resultado">
+        <button type="button" id="botao">Calcular</button>
+
+        <br><br>
+        <div id="resultados">
+            <div id="resDominancia">
+                <label for="mediaD">Média Dominância:</label>
+                <input type="number" name="mediaD" id="mediaD" disabled placeholder="Dominância">
+            </div>
+            <div id="resInfluencia">
+                <label for="mediaI">Média Influência:</label>
+                <input type="number" name="mediaI" id="mediaI" disabled placeholder="Influência">
+            </div>
+            <div id="resEstabilidade">
+                <label for="mediaE">Média Estabilidade:</label>
+                <input type="number" name="mediaE" id="mediaE" disabled placeholder="Estabilidade">
+            </div>
+            <div id="resConformidade">
+                <label for="mediaC">Média Estabilidade:</label>
+                <input type="number" name="mediaC" id="mediaC" disabled placeholder="Conformidade">
+            </div>
+        </div>
+
+        <p class="perfil">Resultado do perfil: <span id="perfil"></span></p>
+    </section>
+
+
+
+    <script src="testeDISC.js"></script>
+</body>
+</html>
