@@ -1,3 +1,12 @@
+body {
+    background: rgb(85, 221, 187);
+}
+.vermelho{
+    color: rgb(178,3,4);
+}
+.senhaemailIncorreto{
+    visibility: hidden;
+}
 #nivel {   
     background-color: rgb(85, 221, 187);
     border: 1px solid black;
@@ -9,7 +18,7 @@
 }
 
 #nivel:hover {
-    background-color:rgb(236, 4, 4);
+    background-color: tomato;
     border: 1px solid white;
 }
 
