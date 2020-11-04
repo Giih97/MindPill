@@ -1,0 +1,57 @@
+CREATE database `mindpill`
+default character set utf8
+default collate utf8_general_ci;
+
+use mindpill;
+
+CREATE TABLE `mindpill`.`usuarios` (
+  `idusuarios` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(70) NOT NULL,
+  `email` VARCHAR(70) NOT NULL,
+  `senha` VARCHAR(20) NOT NULL,
+  `disc` TINYINT NOT NULL DEFAULT 0,
+  PRIMARY KEY (`idusuarios`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC)
+  )default charset = utf8;
+
+
+CREATE TABLE `mindpill`.`disc` (
+  `iddisc` INT NOT NULL AUTO_INCREMENT,
+  `pergunta` VARCHAR(100) NOT NULL,
+  `perfil` CHAR(1) NOT NULL,
+  PRIMARY KEY (`iddisc`)
+  )default charset = utf8;
+
+
+
+INSERT INTO disc (pergunta, perfil)
+VALUES ('Poderosa, Ágil, Eficiente', 'D'),
+('Autoconfiante, Independente, Dominante', 'D'),
+('Pensa rápido, Aberta, Se expõe', 'I'),
+('Comunicativoa, Alegre, Extrovertida', 'I'),
+('Altruísta, Empática, Cuidadora', 'S'),
+('Acolhedora, Amigável, Paciente', 'S'),
+('Metódica, Reflexiva, Detalhista', 'C'),
+('Autodisciplinada, Atenta a Detalhes, Cuidadosa', 'C');
+
+
+CREATE TABLE `mindpill`.`parceiros` (
+  `idparceiros` INT NOT NULL AUTO_INCREMENT,
+  `nome` VARCHAR(70) NOT NULL,
+  `email` VARCHAR(70) NOT NULL,
+  `senha` VARCHAR(20) NOT NULL,
+  `telefone` VARCHAR(20) NOT NULL,
+  `descricao` VARCHAR(150) NOT NULL,
+  `imagem` VARCHAR(150) NULL,
+  PRIMARY KEY (`idparceiros`),
+  UNIQUE INDEX `email_UNIQUE` (`email` ASC),
+  UNIQUE INDEX `telefone_UNIQUE` (`telefone` ASC)
+  )default charset = utf8;
+
+INSERT INTO parceiros (nome, email, senha, telefone, descricao, imagem)
+VALUES ('Rafael Mello', 'rafael@mindpill.com', 1234, '(11) 9999-9999', 'Transtornos de ansiedade, Stress, Psicoterapia, Esquizofrenia, Depressão', 'imgParceiro1.jpg'),
+('Anita de Castilho', 'anitadecastilho@mindpill.com', 1234, '(11) 9999-9998', 'Transtornos de ansiedade, Terapia cognitivo-comportamental, Stress, Depressão', 'imgParceiro2.jpg'),
+('Guilherme Beck', 'guilherme@mindpill.com', 1234, '(11) 9999-9997', 'Transtornos de ansiedade, Problemas de relacionamentos, Depressão, Aconselhamento psicológico,Freudiana', 'imgParceiro3.jpg');
+
+
+mysql_fetch_array - funcao para randomizar a lista das perguntas DISC
