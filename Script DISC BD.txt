@@ -39,7 +39,7 @@ VALUES ('Poderosa, Ágil, Eficiente', 'D'),
 ('Lutadora, Combatível, Agressiva','D'),
 ('Automotivada, Pioneira, Impulssionadora','D'),
 ('Resolvedora, Destemida, Desafiadora','D'),
-('Competitiva, Assume riscos, Desbravadora','D')
+('Competitiva, Assume riscos, Desbravadora','D');
 default charset = utf8;
 
 
@@ -81,5 +81,5 @@ VALUES ('Metódica, Reflexiva, Detalhista','C'),
 ('Profunda, Perceptiva, Estratégica','C'),
 ('Exato, Exigente, Estruturada','C'),
 ('Ponderada, Ordenadora, Analisadora','C'),
-('Teórica, Conservadora, Aprofunda conhecimentos','C')
+('Teórica, Conservadora, Aprofunda conhecimentos','C');
 default charset = utf8;
