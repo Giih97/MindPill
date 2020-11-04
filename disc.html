@@ -26,7 +26,7 @@
                 if($result->num_rows > 0){
                     while($rows = $result->fetch_assoc()){
             ?>
-            <div class="list-item" draggable="true" id="<?php echo $rows["perfil"]?>">
+            <div class="list-item" draggable="true" id="<?php echo $rows['perfil']?>">
                 <?php echo utf8_encode($rows["pergunta"])?></div>
             <?php
                     }

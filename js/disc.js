@@ -110,5 +110,25 @@ function teste(){
 			valor_C += 4;
 		}
 	}
-	console.log('D:', valor_D/8*100, ' I:', valor_I/8*100, 'S:', valor_S/8*100, ' C:', valor_C/8*100);
+
+	let mediaD = valor_D/8*100
+	let mediaI = valor_I/8*100
+	let mediaS = valor_S/8*100
+	let mediaC = valor_C/8*100
+	
+	console.log('D:', mediaD, ' I:', mediaI, 'S:', mediaS, ' C:', mediaC);
+
+	if((mediaD >= mediaS) && (mediaD >= mediaI) && (mediaD >= mediaC)) {
+        window.location.href = "./trilhad.php"
+    } else if ((mediaI >= mediaD) && (mediaI >= mediaS) && (mediaI >= mediaC)) {
+        window.location.href = "./trilhai.php"
+    } else if ((mediaS >= mediaD) && (mediaS >= mediaI) && (mediaS >= mediaC)) {
+        window.location.href = "./trilhas.php"
+    } else if ((mediaC >= mediaD) && (mediaC >= mediaS) && (mediaC >= mediaI)) {
+        window.location.href = "./trilhac.php"
+    } else {
+		window.location.href = "./trilhaIN.php"
+	}
+
+
 }

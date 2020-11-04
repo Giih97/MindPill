@@ -7,9 +7,17 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">       
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <style>
+            body {
+                background: rgb(85, 221, 187);
+            }
+            .vermelho{
+                color: rgb(178,3,4);
+            }
+        </style>
+
 
         <title>Mind Pill - Recuperar Senha</title>
     </head>
