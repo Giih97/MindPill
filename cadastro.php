@@ -30,33 +30,31 @@
 
         <div class="container">
             <div style="width: 18rem" class="mx-auto my-5 text-white">
-                <form method="post">
+                <form method="post" id="usuario">
+                    <h3>Cadastro</h3>
                     <div class="form-group">
                         <label for="nome">Nome: </label>
-                        <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome" requerid>
+                        <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email: </label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" requerid>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha: </label>
-                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" requerid>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
                     </div>
                     <div class="form-group">
                         <label for="senha2">Confirme a senha: </label>
-                        <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua senha" requerid>
+                        <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua senha" required>
                     </div>
                 
                     <input class="btn btn-block btn-primary mb-3" type="submit" value="Cadastrar">
                     <input class="btn btn-block btn-primary mb-3" type="button" value="Voltar" onclick="window.location.href = 'index.php'">
 
-                        <?php
-                            require('php/cadastrarUsuario.php');
-                            $cadastro();
-                        ?>
-
-
+                    <?php
+                        require('php/cadastrarUsuario.php');
+                    ?>
                 </form>
             </div>
         </div>

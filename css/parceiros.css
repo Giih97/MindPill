@@ -130,6 +130,9 @@ border-right:2px solid  rgba(3, 3, 3, 0.35);
     {
         width: 400px;
     }
+    .container .card .content{
+        overflow: hidden;
+    }
 }
 @media (max-width: 768px)
 {

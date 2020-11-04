@@ -22,7 +22,7 @@
         </style>
     </head>
 
-    <body>
+    <body onselectstart="return false">
         <header>
             <!-- CABECALHO e MENU-->
             <?php
@@ -30,8 +30,8 @@
             ?>
         </header>
         <?php
-                include('disc.html');
-            ?>
+            include('disc.html');
+        ?>
         
         <script src="./js/disc.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

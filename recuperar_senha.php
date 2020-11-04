@@ -24,19 +24,19 @@
         <main>
             <div class="container">
                 <div style="width: 18rem" class="mx-auto my-5 text-white">
-                    <h3>Recuperar senha</h3>
                     <form method="post">
+                        <h3>Recuperar senha</h3>
                         <div class="form-group">
                             <label for="email">Email: </label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" requerid>
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                         </div>
                         <div class="form-group">
                             <label for="senha">Senha: </label>
-                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua nova senha" requerid>
+                            <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua nova senha" required>
                         </div>
                         <div class="form-group">
                             <label for="senha2">Confirme a senha: </label>
-                            <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua nova senha" requerid>
+                            <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua nova senha" required>
                         </div>
                     
                         <input class="btn btn-block btn-primary mb-3" type="submit" value="Alterar Senha">

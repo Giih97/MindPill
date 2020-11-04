@@ -22,7 +22,7 @@
     </head>
     <body>
        <div class="container pt-5 text-white">
-       <h1 class="text-center">Bem-vindo ao Mind Pill!</h1>
+            <h1 class="text-center">Bem-vindo ao Mind Pill!</h1>
             <div class="row mt-5">
                 <div class="col-md-8">
                     <img class="img img-fluid" src="./image/cyber-brain.png" alt="" width=600>
@@ -34,16 +34,13 @@
                             <label for="email">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Digite o email" name="email" required>
                         </div>
-                        
                         <div class="form-group">
                             <label for="senha">Senha:</label>
                             <input type="password" class="form-control" id="senha" placeholder="Digite a senha" name="senha" required>
-
                         </div>
                         <p class="bold vermelho" id="senhaemailIncorreto">
                         <?php
-                        require('php/verificarUsuario.php');
-                        $verificacao();
+                            include('php/verificarUsuario.php');
                         ?>
                         </p>
                         <button type="submit" class="btn btn-primary btn-block">Envio!</button>
@@ -54,16 +51,11 @@
                     </form>
                 </div>
             </div>
-
             <footer class="text-center py-4">© Mind Pill 2020</footer>
        </div>
 
-
-
-
-
-       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     </body>
 </html>

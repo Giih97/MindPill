@@ -34,27 +34,27 @@
                 <form method="post">
                     <div class="form-group">
                         <label for="nome">Nome: </label>
-                        <input type="text" class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome" requerid>
+                        <input type="text" class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
                     </div>
                     <div class="form-group">
                         <label for="telefone">Telefone: </label>
-                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" requerid>
+                        <input type="text" class="form-control" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
                     </div>
                     <div class="form-group">
                         <label for="descricao">Campos de Atendimento: </label>
-                        <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Ex: Ansiedade, Stress, Depressão..." maxlength="100" requerid>
+                        <input type="text" class="form-control" id="descricao" name="descricao" placeholder="Ex: Ansiedade, Stress, Depressão..." maxlength="100" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email: </label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" requerid>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
                     <div class="form-group">
                         <label for="senha">Senha: </label>
-                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" requerid>
+                        <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
                     </div>
                     <div class="form-group">
                         <label for="senha2">Confirme a senha: </label>
-                        <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua senha" requerid>
+                        <input type="password" class="form-control" id="senha2" name="senha2" placeholder="Confirme sua senha" required>
                     </div>
                 
                     <input class="btn btn-block btn-primary mb-3" type="submit" value="Cadastrar">
