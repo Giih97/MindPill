@@ -80,10 +80,10 @@
             
                    ?>
                     <tr class="table-light">
-                        <td> <?php echo $rows ['nome'];?> </td>
+                        <td> <?php echo $rows ['nome'];?></td>
                         <td><?php echo $rows ['email'];?></td>
                         <td><?php echo $rows ['telefone'];?></td>
-                        <td><?php echo $rows ['descricao'];?></td>
+                        <td><?php echo utf8_encode($rows['descricao']);?></td>
                     </tr>
                     <?php
                        }
