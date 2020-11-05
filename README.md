@@ -16,7 +16,7 @@ estar e uma vida mais sadia e saudável.
  Projeto criado com HTML, CSS, JavaScript, MySQL, PHP e Boostrap.
 
  ### Link para visualização do projeto
- Site: [Mind Pill](https://mindpill.infinityfreeapp.com)
+ Site: [Mind Pill](http://mindpill.infinityfreeapp.com)
 
 
 Clique aqui para acessar o código fonte do projeto: https://Giih97.github.io/MindPill/
