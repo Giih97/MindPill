@@ -1,6 +1,6 @@
 CREATE database `mindpill`
 default character set utf8
-default collate utf8_general_ci;
+default collate utf8_bin;
 
 use mindpill;
 

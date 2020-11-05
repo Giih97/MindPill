@@ -8,7 +8,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
         <title>Formulário DISC</title>
+=======
+        <title>DISC</title>
+>>>>>>> fb58017bd7fa9a8992d4555ad014752791172ea7
        
         <link rel="stylesheet" href="./css/disc.css">
 
