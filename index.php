@@ -40,13 +40,13 @@
                         </div>
                         <p class="bold vermelho" id="senhaemailIncorreto">
                         <?php
-                            include('php/verificarUsuario.php');
+                            require('php/require/verificarUsuario.php');
                         ?>
                         </p>
                         <button type="submit" class="btn btn-primary btn-block">Envio!</button>
                         <h6 class="text-center mt-2">
-                            <a href="cadastro.php">Cadastre-se</a> | <a href="recuperar_senha.php">Esqueci a senha</a>
-                            <br><a href="cadastroParceiro.php">Seja um parceiro</a>
+                             <a href="cadastro.php">Cadastre-se</a> | <!--<a href="recuperar_senha.php">Esqueci a senha</a> <br> -->
+                            <a href="cadastroParceiro.php">Seja um parceiro</a>
                         </h6>
                     </form>
                 </div>

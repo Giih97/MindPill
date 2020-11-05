@@ -1,5 +1,5 @@
 <?php
-    require('php/conexao.php');
+    require('php/require/conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@
         <header>
             <!-- CABECALHO e MENU-->
             <?php
-                include('cabecalho.html');
+                include('php/include/cabecalho.html');
             ?>
         </header>
 
@@ -53,7 +53,7 @@
                     <input class="btn btn-block btn-primary mb-3" type="button" value="Voltar" onclick="window.location.href = 'index.php'">
 
                     <?php
-                        require('php/cadastrarUsuario.php');
+                        require('php/require/cadastrarUsuario.php');
                     ?>
                 </form>
             </div>

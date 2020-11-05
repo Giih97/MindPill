@@ -1,0 +1,51 @@
+<style>
+    .fundo {
+        background: rgb(0, 118, 87);
+    }
+    .btn-pill {
+        color: white;
+        border: 1px solid rgb(236, 4, 4);
+        background: rgb(178, 3, 4);
+        padding: 0 20px;
+        margin: 0 10px;
+        border-radius: 25px;
+        line-height: 30px;
+
+    }
+    .btn-pill:hover {
+        background: rgb(236, 4, 4);
+    }
+    @media (min-width: 576px) {
+        .btn-pill {
+        width: 130px;
+        }
+    }
+</style>
+
+
+<nav class="navbar navbar-expand-sm navbar-dark fundo">
+    <!-- Logo -->
+    <a href="index.php"><img src="../image/logo01.png" alt="Mind Pill" width="90px"></a>
+    <!-- Menu Hamburger -->
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- navegacao -->
+    <div class="collapse navbar-collapse" id="navegacao">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="../index.php" class="nav-link btn btn-pill text-white my-1">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="trilha.php" class="nav-link btn btn-pill text-white my-1">Trilha</a>
+        </li>
+        <li class="nav-item">
+          <a href="../disc.php" class="nav-link btn btn-pill text-white my-1">Disc</a>
+        </li>
+        <li class="nav-item">
+          <a href="../parceiros.php" class="nav-link btn btn-pill text-white my-1">Parceiros</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>

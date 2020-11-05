@@ -1,5 +1,5 @@
 <?php
-    require('php/conexao.php');
+    require('php/require/conexao.php');
 ?>
 
 <!DOCTYPE html>
@@ -26,11 +26,11 @@
         <header>
             <!-- CABECALHO e MENU-->
             <?php
-                include('cabecalho.html');
+                include('php/include/cabecalho.html');
             ?>
         </header>
         <?php
-            include('disc.html');
+            include('php/include/disc.html');
         ?>
         
         <script src="./js/disc.js"></script>
