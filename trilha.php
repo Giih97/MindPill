@@ -31,9 +31,9 @@
         <div class="container ">
             <div class="row">
                 
-                <?php
-                include('trilha.html'); // Acho melhor colocarmos uma Imagem.
-                ?> 
+                <div class="col-md-6 my-5">
+                    <img class="img img-fluid" src="./image/trilha.png" alt="" width=400>
+                </div> 
                 
                 <div class="col-md-6 mx-auto my-5 text-center">
                     <div class="alert alert-danger">

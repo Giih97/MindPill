@@ -1,7 +1,7 @@
 <?php
     $servername = "localhost";
     $username = "root";
-    $password = "recode123";
+    $password = "";
     $database = "mindpill";
 
     $conn = mysqli_connect($servername, $username, $password, $database);
