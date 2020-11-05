@@ -119,15 +119,15 @@ function teste(){
 	console.log('D:', mediaD, ' I:', mediaI, 'S:', mediaS, ' C:', mediaC);
 
 	if((mediaD >= mediaS) && (mediaD >= mediaI) && (mediaD >= mediaC)) {
-        window.location.href = "../trilhas/trilhad.php"
+        window.location.href = "./trilhas/trilhad.php"
     } else if ((mediaI >= mediaD) && (mediaI >= mediaS) && (mediaI >= mediaC)) {
-        window.location.href = "../trilhas/trilhai.php"
+        window.location.href = "./trilhas/trilhai.php"
     } else if ((mediaS >= mediaD) && (mediaS >= mediaI) && (mediaS >= mediaC)) {
-        window.location.href = "../trilhas/trilhas.php"
+        window.location.href = "./trilhas/trilhas.php"
     } else if ((mediaC >= mediaD) && (mediaC >= mediaS) && (mediaC >= mediaI)) {
-        window.location.href = "../trilhas/trilhac.php"
+        window.location.href = "./trilhas/trilhac.php"
     } else {
-		window.location.href = "../trilhas/trilhaIN.php"
+		window.location.href = "./trilhas/trilhaIN.php"
 	}
 
 
