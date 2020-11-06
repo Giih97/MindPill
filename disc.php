@@ -12,7 +12,7 @@
         <title>DISC</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
        
->>>>>>> 1b3e863976e43c051e906c4dc358327dd2c10f99
+
         <link rel="stylesheet" href="./css/disc.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="icon" href="image/logo01.png">
