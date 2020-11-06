@@ -1,8 +1,7 @@
 <?php
-        
+       
 
     require('conexao.php');
-
     session_start();
 
     if(EMPTY($_POST['email']) || EMPTY($_POST['senha'])){
