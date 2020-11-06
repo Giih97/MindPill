@@ -8,7 +8,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
         <title>Formulário DISC</title>
+=======
+        <title>DISC</title>
+>>>>>>> cd62bf81b0bd88e2f6102452d850c59353045616
        
         <link rel="stylesheet" href="./css/disc.css">
 
@@ -26,7 +30,7 @@
             ?>
         </header>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>PAGINA EM CONSTRUÇÃO!</strong> ,  !
+                <strong>ATENÇÃO!!!!!! PAGINA EM CONSTRUÇÃO!</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -49,7 +53,7 @@
                        <p>Queremos te presentear com uma trilha de técnicas de PNL adequada ao seu perfil, por isso precisamos te conhecer melhor.
                         Desta forma, é importante que você realize o preenchimento do teste conforme as orientações abaixo: </p> 
                         <ul>
-                            <li> Na parte inferior da tela existe um quadrante onde é apresentado alguns               características.
+                            <li> Na parte inferior da tela existe um quadrante onde é apresentado algumas características.
                             </li>
                             <li> 
                                 Na parte superior da tela existem retangulos númerados de 1 a 4.
