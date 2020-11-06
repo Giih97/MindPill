@@ -53,7 +53,7 @@
                        <p>Queremos te presentear com uma trilha de técnicas de PNL adequada ao seu perfil, por isso precisamos te conhecer melhor.
                         Desta forma, é importante que você realize o preenchimento do teste conforme as orientações abaixo: </p> 
                         <ul>
-                            <li> Na parte inferior da tela existe um quadrante onde é apresentado alguns               características.
+                            <li> Na parte inferior da tela existe um quadrante onde é apresentado algumas características.
                             </li>
                             <li> 
                                 Na parte superior da tela existem retangulos númerados de 1 a 4.
