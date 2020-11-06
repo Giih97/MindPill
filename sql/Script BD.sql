@@ -10,9 +10,12 @@ CREATE TABLE `mindpill`.`usuarios` (
   `email` VARCHAR(70) NOT NULL,
   `senha` VARCHAR(20) NOT NULL,
   `disc` TINYINT NOT NULL DEFAULT 0,
-  PRIMARY KEY (`idusuarios`),
+   PRIMARY KEY (`idusuarios`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC)
   )default charset = utf8;
+
+ALTER TABLE `mindpill`.`usuarios` 
+ADD COLUMN `perfil` VARCHAR(45) NULL AFTER `disc`;
 
 CREATE TABLE `mindpill`.`parceiros` (
   `idparceiros` INT NOT NULL AUTO_INCREMENT,
