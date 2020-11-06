@@ -80,17 +80,10 @@
             
                    ?>
                     <tr class="table-light">
-<<<<<<< HEAD
-                        <td> <?php echo $rows ['nome'];?></td>
-                        <td><?php echo $rows ['email'];?></td>
-                        <td><?php echo $rows ['telefone'];?></td>
-                        <td><?php echo utf8_encode($rows['descricao']);?></td>
-=======
                         <td> <?php echo utf8_encode($rows ['nome'])?> </td>
                         <td><?php echo utf8_encode($rows ['email'])?></td>
                         <td><?php echo utf8_encode($rows ['telefone'])?></td>
                         <td><?php echo utf8_encode($rows ['descricao'])?></td>
->>>>>>> fb58017bd7fa9a8992d4555ad014752791172ea7
                     </tr>
                     <?php
                        }
