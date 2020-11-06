@@ -8,11 +8,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
-        <title>Formulário DISC</title>
-=======
         <title>DISC</title>
->>>>>>> fb58017bd7fa9a8992d4555ad014752791172ea7
        
         <link rel="stylesheet" href="./css/disc.css">
 
@@ -30,7 +26,7 @@
             ?>
         </header>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <strong>PAGINA EM CONSTRUÇÃO!</strong>
+                <strong>ATENÇÃO!!!!!! PAGINA EM CONSTRUÇÃO!</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
