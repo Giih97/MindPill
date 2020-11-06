@@ -1,6 +1,8 @@
 <?php
     require('php/require/conexao.php');
     session_start();
+
+    if(isset($_SESSION['id']) && $_SESSION['id'] <> ""){
 ?>
 
 <!DOCTYPE html>
@@ -17,29 +19,6 @@
     body {
         background: rgb(85, 221, 187);
     }
-
-    #tabela {
-        position: absolute;
-        left: 20%;
-        top: 30%;
-        margin-top: -110px;
-        margin-left: -40px;
-        background-color: rgb(255, 235, 205);
-
-
-    }
-
-    table {
-        background-color: rgb(255, 235, 205);
-    }
-
-    #rodape {
-        position: absolute;
-        left: 50%;
-        top: 100%;
-        margin-top: -110px;
-        margin-left: -40px;
-    }
     </style>
     <title>Parceiros</title>
 
@@ -53,17 +32,17 @@
                include('php/include/cabecalho.html');
             ?>
         </header>
-        <div class="container rounded" id="tabela">
+        <div class="container" id="tabela">
 
 
             <div class="text-center">
-                <h3> Informações dos Parceiros</h3>
+                <h3 class="text-white"> Informações dos Parceiros</h3>
             </div>
-            <table class="table table-responsive table-light">
+            <table class="table table-light table-hover rounded text-black">
 
                 <thead>
-                    <div class="row ">
-                        <tr class="table-light ">
+                    <div>
+                        <tr>
                             <th scope="col" style="width:18%">Nome</th>
                             <th scope="col">E-mail</th>
                             <th scope="col" style="width:18%">Telefone</th>
@@ -80,7 +59,7 @@
                    while($rows=$result->fetch_assoc()){
             
                    ?>
-                    <tr class="table-light">
+                    <tr>
                         <td><?php echo utf8_encode($rows ['nome'])?> </td>
                         <td><?php echo utf8_encode($rows ['email'])?></td>
                         <td><?php echo utf8_encode($rows ['telefone'])?></td>
@@ -99,20 +78,7 @@
         </div>
 </main>
 
-                <div>
-                    <?php
-                    
-                   
-                    echo $_SESSION['id'];
-                    echo $_SESSION['nome'];
-                    echo $_SESSION['email'];
-
-                         
-                         ?>
-                 </div>  
-
-
-<footer class="text-center" id="rodape">
+<footer class="text-center text-white" id="rodape">
     <div> © Mind Pill 2020</div>
 </footer>
 
@@ -127,7 +93,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
 </script>
-
+<?php
+    } else{
+        header("Location: ./index.php");
+    }
+?>
 </body>
 
 </html>

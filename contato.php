@@ -1,31 +1,20 @@
 <?php
 
-$servername="localhost";
-$username="root";
-$password="";
-$database="mindpill";
+    require('./php/require/conexao.php');
 
-//criando a conaxão
+    session_start();
 
-$conn=mysqli_connect($servername, $username, $password, $database);
+    if(isset($_SESSION['id']) && $_SESSION['id'] <> ""){
 
-//correção do erro de acentuação trabahando com bd
-$conn->query("set names utf8");
+    if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) && isset($_POST['mensagem'])){
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $motivo = $_POST['motivo'];
+        $mensagem = $_POST['mensagem'];
 
-//Verificando a conexão
-if(!$conn){
-    die("A conexão ao BD falhou". mysqli_connect_error());
-}
-
-if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) && isset($_POST['mensagem'])){
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $motivo = $_POST['motivo'];
-    $mensagem = $_POST['mensagem'];
-
-    $sql = "insert into mensagens (nome, email, motivo, mensagem) values ('$nome', '$email', '$motivo', '$mensagem')";
-    $result = $conn->query($sql);
-}
+        $sql = "insert into mensagens (nome, email, motivo, mensagem) values ('$nome', '$email', '$motivo', '$mensagem')";
+        $result = $conn->query($sql);
+    }
 
 ?>
 
@@ -159,7 +148,11 @@ if(isset($_POST['nome']) && isset($_POST['email']) && isset($_POST['motivo']) &&
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
 </script>
-
+        <?php
+            } else{
+                header("Location: ./index.php");
+            }
+        ?>
 </body>
 
 </html>

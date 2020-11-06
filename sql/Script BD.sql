@@ -10,9 +10,12 @@ CREATE TABLE `mindpill`.`usuarios` (
   `email` VARCHAR(70) NOT NULL,
   `senha` VARCHAR(20) NOT NULL,
   `disc` TINYINT NOT NULL DEFAULT 0,
-  PRIMARY KEY (`idusuarios`),
+   PRIMARY KEY (`idusuarios`),
   UNIQUE INDEX `email_UNIQUE` (`email` ASC)
   )default charset = utf8;
+
+ALTER TABLE `mindpill`.`usuarios` 
+ADD COLUMN `perfil` VARCHAR(45) NULL AFTER `disc`;
 
 CREATE TABLE `mindpill`.`parceiros` (
   `idparceiros` INT NOT NULL AUTO_INCREMENT,
@@ -38,6 +41,15 @@ CREATE TABLE `mindpill`.`parceiros` (
     `pergunta` VARCHAR(100) NOT NULL,
     `perfil` CHAR(1) NOT NULL,
     PRIMARY KEY (`iddisc`)
+    )default charset = utf8;
+
+  CREATE table `mindpill`.`mensagens` 
+    (`msg_cod` INT NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR (70) NOT NULL, 
+    `email`VARCHAR (70) NOT NULL,
+    `motivo` VARCHAR (70) NOT NULL,
+    `mensagem`VARCHAR (200) NOT NULL,
+    PRIMARY KEY (`msg_cod`)
     )default charset = utf8;
 
   INSERT INTO disc (pergunta, perfil)
@@ -92,12 +104,5 @@ VALUES ('Metódica, Reflexiva, Detalhista','C'),
 -- mysql_fetch_array - funcao para randomizar a lista das perguntas DISC
 
 
-CREATE table `mindpill`.`mensagens` 
-(`msg_cod` INT NOT NULL AUTO_INCREMENT,
-`nome` VARCHAR (70) NOT NULL, 
-`email`VARCHAR (70) NOT NULL,
-`motivo` VARCHAR (70) NOT NULL,
-`mensagem`VARCHAR (200) NOT NULL,
-PRIMARY KEY (`msg_cod`)
-)default charset = utf8;
+
  

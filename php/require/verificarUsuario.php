@@ -1,8 +1,6 @@
 <?php
-        
-
+       
     require('conexao.php');
-
     session_start();
 
     if(EMPTY($_POST['email']) || EMPTY($_POST['senha'])){
@@ -24,29 +22,23 @@
         if($usuario){ 
             $_SESSION['id'] = $usuario['idusuarios'];
             $_SESSION['nome'] = $usuario['nome'];
-            $_SESSION['email'] = $usuario['email'];   //Verificar se existe email na tabela usuario
+            $_SESSION['email'] = $usuario['email'];
+            $_SESSION['disc'] = $usuario['disc']; 
+            $_SESSION['perfil'] = $usuario['perfil'];    //Verificar se existe email na tabela usuario
 
             header("location: ./disc.php");
 
             if($usuario["disc"] == 0){
-                ?>
-                    <script>window.location.href = "disc.php";</script>
-                <?php
+                header("location: ./disc.php");
             } else {
-                ?>
-                    <script>window.location.href = "trilha.php";</script>
-                <?php
+                header("location: ./trilhas/trilha.php");
             }
         } else if($parceiro){ //Verificar se existe email na tabela parceiros
             $_SESSION['id'] = $usuario['idparceiros'];
             $_SESSION['nome'] = $usuario['nome'];
             $_SESSION['email'] = $usuario['email'];
               
-            header("location: ./disc.php");
-
-            ?>
-                <script>window.location.href = "parceiros.php";</script>
-            <?php
+            header("location: ./parceiros.php");
         } else{
             ?>
             <div class="alert alert-danger alert-dismissible">
