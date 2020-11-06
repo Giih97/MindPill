@@ -1,5 +1,6 @@
 <?php
     require('php/require/conexao.php');
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -98,7 +99,17 @@
         </div>
 </main>
 
+                <div>
+                    <?php
+                    
+                   
+                    echo $_SESSION['id'];
+                    echo $_SESSION['nome'];
+                    echo $_SESSION['email'];
 
+                         
+                         ?>
+                 </div>  
 
 
 <footer class="text-center" id="rodape">

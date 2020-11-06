@@ -1,5 +1,6 @@
 <?php
     require('php/require/conexao.php');
+    session_start();
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +21,7 @@
 
     <body onselectstart="return false">
         <header>
+        
             <!-- CABECALHO e MENU-->
             <?php
                 include('php/include/cabecalho.html');
@@ -34,7 +36,22 @@
            <?php
             include('php/include/disc.html');
            ?>
- 
+               
+               <div>
+                    <?php
+                    
+                   
+                    echo $_SESSION['id'];
+                    echo $_SESSION['nome'];
+                    echo $_SESSION['email'];
+
+                         
+                         ?>
+                 </div>     
+                  
+
+                   
+                
                 <div class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
