@@ -1,5 +1,4 @@
 <?php
-
     session_start();
 
     $_SESSION['id'] = "";
@@ -9,5 +8,4 @@
     $_SESSION['perfil'] = "";
 
     header("Location: ../../index.php");
-
 ?>

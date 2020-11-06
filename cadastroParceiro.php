@@ -8,8 +8,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mind Pill</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        
         <style>
             body {
                 background: rgb(85, 221, 187);
@@ -18,6 +18,8 @@
                 color: rgb(178,3,4);
             }
         </style>
+        
+        <title>Mind Pill - Cadastro Parceiro</title>
     </head>
     <body>
         <header>
@@ -30,6 +32,7 @@
         <div class="container">
             <div style="width: 18rem" class="mx-auto my-5 text-white">
                 <form method="post">
+                    <h3>Cadastro Parceiro</h3>
                     <div class="form-group">
                         <label for="nome">Nome: </label>
                         <input type="text" class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu nome" required>
@@ -64,7 +67,9 @@
                 </form>
             </div>
         </div>
-        <footer class="text-center py-5 text-white">© Mind Pill 2020</footer>
+        <footer class="text-center text-white py-5" id="rodape">
+            <div> © Mind Pill 2020</div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

@@ -1,23 +1,21 @@
 <?php
     require('php/require/conexao.php');
+
     session_start();
 
-    if(isset($_SESSION['id']) && $_SESSION['id'] <> ""){
+    if(isset($_SESSION['id']) && $_SESSION['id'] <> ""){ //Verificar se existe alguma SESSION iniciada
 ?>
 
 <!DOCTYPE html>
+
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title>DISC</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-       
-
-        <link rel="stylesheet" href="./css/disc.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
         <link rel="icon" href="image/logo01.png">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        
         <style>
             body {
                 background: rgb(85, 221, 187);
@@ -36,11 +34,12 @@
                 background: rgb(23, 152, 118);
             }
         </style>
+        
+        <title>DISC</title>
     </head>
 
     <body onselectstart="return false">
         <header>
-        
             <!-- CABECALHO e MENU-->
             <?php
                 include('php/include/cabecalho.html');
@@ -56,7 +55,6 @@
             </div>
 
             <div class="lists row my-2 text-center justify-content-center overflow-hidden">
-                
                 <div style="height: 200px" class="list bg-verde-ecuro m-1 col-md rounded overflow-hidden" id="teste1" name="1">
                     <h1>1</h1>
                 </div>
@@ -72,7 +70,6 @@
             </div>
    
             <div style="height: 170px; width: 400px;" class="lists row text-center justify-content-center overflow-hidden mx-auto">
-
                 <div id="testep" class="list col" name="questoes" onmouseover="mostrarBotao()">
                     <?php
                         $sql = "SELECT * FROM disc";
@@ -81,7 +78,7 @@
                         if($result->num_rows > 0){
                             while($rows = $result->fetch_assoc()){
                     ?>
-                    <div class="list-item bg-danger rounded m-1 py-2" draggable="true" id="<?php echo $rows['perfil']?>">
+                            <div class="list-item bg-danger rounded m-1 py-2" draggable="true" id="<?php echo $rows['perfil']?>">
                         <?php echo utf8_encode($rows["pergunta"])?>
                     </div>
                     <?php
@@ -94,7 +91,9 @@
             </div>
             <button class="btn btn-success btn-block btn-verde-ecuro" id="idDoBotao" style="visibility: hidden;" onclick="teste()">Finalizar teste</button>
 
-            <footer class="text-center py-4">© Mind Pill 2020</footer>
+            <footer class="text-center text-white py-4" id="rodape">
+                <div> © Mind Pill 2020</div>
+            </footer>
         </div>
 
  
@@ -108,7 +107,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        
                         <p>Queremos te presentear com uma trilha de técnicas de PNL adequada ao seu perfil, por isso precisamos te conhecer melhor.
                         Desta forma, é importante que você realize o preenchimento do teste conforme as orientações abaixo: </p> 
                         <ul>
@@ -125,7 +123,6 @@
                                 Após arrastar todas as características, <b>click no botão que aparecerá!</b> 
                             </li>               
                         </ul>
-
                         <p>
                             Está etapa é muito importante para acertarmos na sua trilha, por isso lembre-se de preencher com atenção e ser bastante sincero! 
                             <br><br> 
@@ -140,7 +137,6 @@
             </div>
         </div> 
 
-
         <script type="text/javascript">
             $(window).on('load',function(){
                 $('#ExemploModalCentralizado').modal('show');
@@ -153,7 +149,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     
         <?php
-            } else{
+            } else{ //Redireciona para o inicio se nao tiver SESSION iniciada
                 header("Location: ./index.php");
             }
         ?>

@@ -13,7 +13,5 @@
     $sql = "UPDATE usuarios SET disc = 1 WHERE idusuarios = $idusuario";
     $result = $conn->query($sql);
 
-    session_abort();
-
     include_once('trilha.php');
 ?>
