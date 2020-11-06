@@ -1,6 +1,8 @@
 <?php
     require('php/require/conexao.php');
     session_start();
+
+    if(isset($_SESSION['id']) && $_SESSION['id'] <> ""){
 ?>
 
 <!DOCTYPE html>
@@ -99,19 +101,6 @@
         </div>
 </main>
 
-                <div>
-                    <?php
-                    
-                   
-                    echo $_SESSION['id'];
-                    echo $_SESSION['nome'];
-                    echo $_SESSION['email'];
-
-                         
-                         ?>
-                 </div>  
-
-
 <footer class="text-center" id="rodape">
     <div> © Mind Pill 2020</div>
 </footer>
@@ -127,7 +116,11 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
     integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
 </script>
-
+<?php
+    } else{
+        header("Location: ./index.php");
+    }
+?>
 </body>
 
 </html>
