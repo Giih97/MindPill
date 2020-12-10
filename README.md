@@ -60,3 +60,4 @@ OBS: Criar banco de dados no MySQL para completo funcionamento no servidor web.
 <b>Desenvolvedores:</b> André Marques([@andrem91](https://github.com/andrem91)), Bruno Gouveia([@Bruno4745](https://github.com/Bruno4745)), Diego Ribeiro([@dr-diegoribeiro](https://github.com/dr-diegoribeiro)), Edmar Miller([@EdmarMiller](https://github.com/EdmarMiller)), Gilda Monteiro([@Giih97](https://github.com/Giih97)) e Nathany Mendonça([@nathanymendonca](https://github.com/nathanymendonca)).
 
 <b>Monitoria:</b> Afonso Medeiros([@afonsomedeiros](https://github.com/afonsomedeiros))
+Projeto pausado devido questões internas.
